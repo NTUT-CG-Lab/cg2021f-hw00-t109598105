@@ -162,17 +162,6 @@
 var accountID = "t109598105";
 
 window.onload = function() {
-    for(var i = 0 ; i<=12; i++){
-      var num = i.toString();
-      while(num.length < 2){
-        num = '0' + num;
-      }
-      document.getElementById('hw' + num).onclick = function(evt){
-        openCity(evt, 'hw' + num);
-      }
-    }
-
-    var hw00 = document.getElementById('hw00');
     openCity({ currentTarget: document.getElementsByClassName('tablinks')[0] }, 'hw00');
 };
 
